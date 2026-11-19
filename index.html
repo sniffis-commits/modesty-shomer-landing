@@ -6,7 +6,7 @@
 <title>שומר — שומר המסך החכם | שום תמונה לא יוצאת מהטלפון</title>
 <meta name="description" content="שומר צופה על המסך ומכסה תוכן לא צנוע ברגע שהוא מופיע. בינה מלאכותית שרצה כולה על המכשיר — שום פריים לא עוזב את הטלפון.">
 <meta name="theme-color" content="#193B51">
-<link rel="icon" type="image/svg+xml" href="assets/screen-guard-logo.svg">
+<link rel="icon" type="image/svg+xml" href="assets/shomer-logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -338,7 +338,7 @@ footer a:hover{color:var(--accent)}
 <header class="topbar">
   <div class="wrap">
     <a class="brand" href="#top">
-      <img src="assets/screen-guard-logo.svg" alt="שומר">
+      <img src="assets/shomer-logo.svg" alt="שומר">
       שומר
       <small>BY MODESTY</small>
     </a>
@@ -575,19 +575,20 @@ footer a:hover{color:var(--accent)}
     <div class="wrap">
       <div class="sec-tag">// GET SHOMER</div>
       <h2>מוכנים לסגור את המסך?</h2>
-      <p>בוחרים את הגרסה שמתאימה לבית, מורידים את ה-APK ומתקינים. שתי דקות — והטלפון מוגן.</p>
+      <p>בוחרים את הגרסה שמתאימה לבית, מתקינים מחנות Google Play — ומגנים על המסך. שתי דקות, וזהו.</p>
+      <p class="dl-note" style="margin-bottom:18px">זו <b>גרסת הבטא החופשית</b>: ההורדה בחינם, מוצגות פרסומות, ואנחנו אוספים משוב כדי לשפר. הסריקה עצמה נשארת על המכשיר.</p>
       <div class="dl-cards">
-        <a class="dl-card" href="#" data-dl="religious">
+        <a class="dl-card" href="https://play.google.com/store/apps/details?id=com.oyacorp.modesty.guard.religious.free" data-dl="religious" target="_blank" rel="noopener">
           <b>שומר · דתי</b>
-          <span>מכסה מדירוג 5 · הורדת APK</span>
+          <span>מכסה מדירוג 5 · הורדה מ-Google Play</span>
         </a>
-        <a class="dl-card" href="#" data-dl="family">
+        <a class="dl-card" href="https://play.google.com/store/apps/details?id=com.oyacorp.modesty.guard.family.free" data-dl="family" target="_blank" rel="noopener">
           <b>שומר · משפחה</b>
-          <span>מכסה מדירוג 7 · הורדת APK</span>
+          <span>מכסה מדירוג 7 · הורדה מ-Google Play</span>
         </a>
-        <a class="dl-card" href="#" data-dl="kids">
+        <a class="dl-card" href="https://play.google.com/store/apps/details?id=com.oyacorp.modesty.guard.kids.free" data-dl="kids" target="_blank" rel="noopener">
           <b>שומר · ילדים</b>
-          <span>מכסה מדירוג 6 · הורדת APK</span>
+          <span>מכסה מדירוג 6 · הורדה מ-Google Play</span>
         </a>
       </div>
       <p class="dl-note">גרסאות קפדן ומבוגרים זמינות גם · המנוע מאחורי הקלעים: <a href="https://modesty.cia.org.il" rel="noopener">modesty.cia.org.il</a></p>
@@ -597,7 +598,7 @@ footer a:hover{color:var(--accent)}
 
 <footer>
   <div class="wrap">
-    <div class="fbrand"><img src="assets/screen-guard-logo.svg" alt="">שומר</div>
+    <div class="fbrand"><img src="assets/shomer-logo.svg" alt="">שומר</div>
     <div>מופעל על ידי מנוע <a href="https://modesty.cia.org.il" rel="noopener">Modesty</a> · הקוד פתוח (MIT) · © 2026</div>
   </div>
 </footer>
@@ -641,17 +642,7 @@ flavors.forEach(f=>{
 });
 select('religious');
 
-// download placeholders (wire real APK links here)
-document.querySelectorAll('[data-dl]').forEach(a=>{
-  a.addEventListener('click',e=>{
-    if(a.getAttribute('href')==='#'){
-      e.preventDefault();
-      a.querySelector('span').textContent = 'הקישור יחובר כשה-APK עולה';
-      setTimeout(()=>{ a.querySelector('span').textContent = a.dataset.orig; }, 2200);
-    }
-  });
-  a.dataset.orig = a.querySelector('span').textContent;
-});
+// download cards link directly to Google Play (see .dl-card hrefs)
 </script>
 </body>
 </html>
