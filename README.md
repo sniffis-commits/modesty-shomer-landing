@@ -8,8 +8,8 @@ shipped with the original zip (`README-HE.txt`) explains how to rename it.
 
 - `index.html` — the whole page; CSS and JS are inlined, no backend, no PHP,
   no database.
-- `assets/shomer-logo.svg` — the logo, also used as the favicon. Replace this
-  file to rebrand without touching the code.
+- `assets/screen-guard-logo.svg` — the official Screen Guard logo from the main site
+  (`https://modesty.cia.org.il/images/logos/apk.svg`), also used as the favicon.
 - `assets/rav-kook.jpg` — the cover-screen image (Rabbi Kook, 1924, Library of
   Congress, public domain), same source the app uses.
 
