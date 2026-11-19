@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>שומר — שומר המסך החכם | שום תמונה לא יוצאת מהטלפון</title>
-<meta name="description" content="שומר צופה על המסך ומכסה תוכן לא צנוע ברגע שהוא מופיע. בינה מלאכותית שרצה כולה על המכשיר — בלי הרשאת אינטרנט בכלל.">
+<meta name="description" content="שומר צופה על המסך ומכסה תוכן לא צנוע ברגע שהוא מופיע. בינה מלאכותית שרצה כולה על המכשיר — שום פריים לא עוזב את הטלפון.">
 <meta name="theme-color" content="#193B51">
 <link rel="icon" type="image/svg+xml" href="assets/screen-guard-logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -357,12 +357,12 @@ footer a:hover{color:var(--accent)}
   <!-- HERO -->
   <div class="wrap hero">
     <div>
-      <div class="pill"><span class="dot"></span>100% ON-DEVICE · NO INTERNET PERMISSION</div>
+      <div class="pill"><span class="dot"></span>100% ON-DEVICE · NO FRAMES LEAVE THE PHONE</div>
       <h1>שומר המסך.<br><span class="hl">שום תמונה לא יוצאת מהטלפון.</span></h1>
       <p class="lead">
         שומר צופה על המסך, מדרג כל פריים בסולם של 1–10 עם מודלי בינה שרצים
         כולם על המכשיר — ומכסה את המסך ברגע שהתוכן עובר את הגבול שקבעתם.
-        לא &quot;לא שולחים כלום&quot;: להאפליקציה <b>אין בכלל הרשאת אינטרנט</b>.
+        הסריקה כולה על המכשיר — <b>שום פריים לא עוזב את הטלפון</b>. בגרסה החופשית יש הרשאת אינטרנט לצורך פרסומות בלבד.
       </p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#download">הורדת ה-APK</a>
@@ -439,11 +439,11 @@ footer a:hover{color:var(--accent)}
     <div class="wrap privacy-grid">
       <div>
         <div class="sec-tag">// PRIVACY BY DESIGN</div>
-        <h2>הפרטיות היא לא הבטחה. היא הרשאה שלא קיימת.</h2>
+        <h2>הפרטיות היא לא הבטחה. הפריימים נשארים על המכשיר.</h2>
         <p class="sec-sub" style="margin-bottom:26px">
-          רוב האפליקציות מבטיחות &quot;לא לשלוח כלום&quot;. שומר הולך צעד אחד קדימה:
-          הרשאת ה-INTERNET <b>לא מוצהרת בכלל</b> בקובץ ההגדרות של האפליקציה.
-          אנדרויד עצמו חוסם כל גישה לרשת — גם תאורטית.
+          כל דירוג הפריים מתבצע על המכשיר — <b>שום תמונה לא נשלחת לשום שרת</b>.
+          בגרסה החופשית מוצהרת הרשאת אינטרנט לצורך פרסומות בלבד; בגרסת Pro
+          ללא האינטרנט — ההרשאה כלל לא קיימת, ואנדרויד חוסם כל גישה לרשת.
         </p>
         <div class="checks">
           <div class="check">
@@ -471,12 +471,12 @@ footer a:hover{color:var(--accent)}
       </div>
       <div class="perm-card">
         <div class="head">AndroidManifest.xml — declared permissions</div>
-        <div class="perm-line"><span>android.permission.INTERNET</span><span class="no">NOT DECLARED</span></div>
-        <div class="perm-line"><span>android.permission.ACCESS_NETWORK_STATE</span><span class="no">NOT DECLARED</span></div>
-        <div class="perm-line"><span>MediaProjection (screen capture)</span><span class="yes">ON-DEVICE ONLY</span></div>
+        <div class="perm-line"><span>android.permission.INTERNET</span><span class="val">FREE: ADS · PRO: NOT DECLARED</span></div>
+        <div class="perm-line"><span>android.permission.ACCESS_NETWORK_STATE</span><span class="val">only with INTERNET</span></div>
+        <div class="perm-line"><span>Accessibility (screen capture)</span><span class="yes">ON-DEVICE ONLY</span></div>
         <div class="perm-line"><span>ONNX inference</span><span class="val">runs locally</span></div>
         <div class="perm-line"><span>frames / thumbnails / hashes</span><span class="val">never leave</span></div>
-        <div class="perm-line"><span>analytics / ads SDK</span><span class="no">NONE</span></div>
+        <div class="perm-line"><span>ads SDK (free edition)</span><span class="val">AdMob banner</span></div>
       </div>
     </div>
   </section>
