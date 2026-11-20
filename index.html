@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+
+<html dir="rtl" lang="he">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>שומר — שומר המסך החכם | שום תמונה לא יוצאת מהטלפון</title>
-<meta name="description" content="שומר צופה על המסך ומכסה תוכן לא צנוע ברגע שהוא מופיע. בינה מלאכותית שרצה כולה על המכשיר — שום פריים לא עוזב את הטלפון.">
-<meta name="theme-color" content="#193B51">
-<link rel="icon" type="image/svg+xml" href="assets/shomer-logo.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>שומר | המסך שלכם. הסינון אצלכם.</title>
+<meta content="שומר: ניתוח תמונות מסך מקומי על אנדרואיד. מנוע משותף, הפרדה ברורה בין סינון, פרסום ובקרת הורים, ומידע שקוף על גרסת הבטא." name="description"/>
+<meta content="#193B51" name="theme-color"/>
+<link href="assets/screen-guard-logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{
   /* Modesty "cyan prism" theme (rebrand 18 Nov 2026): navy base + cyan prism,
@@ -330,319 +331,61 @@ footer a:hover{color:var(--accent)}
   .dl-card{min-width:0;width:100%}
   .phone{width:260px}
 }
+
+.hero{padding-left:22px;padding-right:22px}.hero>div{min-width:0}.hero-sub{font-size:clamp(1.05rem,2vw,1.45rem);margin:22px 0 8px;color:var(--cyan)}.hero .lead{font-size:1.06rem}.stats .item b{font-family:inherit;font-size:1.35rem}.privacy-intro{max-width:760px;color:var(--muted);margin:25px 0 36px}.editions p{margin-top:16px}.pin-note{border-top:1px solid var(--line);margin-top:32px;padding-top:26px;max-width:850px}.pin-note p{color:var(--muted);margin-top:12px}.spec .v{font-family:inherit;direction:rtl;text-align:right;line-height:1.8}.download .wrap{max-width:860px}.download p{margin-top:22px}.shot-caption{line-height:1.7}section{scroll-margin-top:90px}@media(max-width:700px){.editions{grid-template-columns:1fr}.specs-grid{grid-template-columns:1fr}.spec{align-items:flex-start;gap:18px}.spec .k{flex:none}.hero-sub{line-height:1.6}.stats{gap:15px}.topbar .brand{font-size:1.1rem}.topbar .btn{font-size:.8rem;padding:10px 14px}}
 </style>
 </head>
 <body>
 <div class="grid-bg"></div>
-
 <header class="topbar">
-  <div class="wrap">
-    <a class="brand" href="#top">
-      <img src="assets/shomer-logo.svg" alt="שומר">
+<div class="wrap">
+<a class="brand" href="#top">
+<img alt="שומר" src="assets/screen-guard-logo.svg"/>
       שומר
       <small>BY MODESTY</small>
-    </a>
-    <nav class="nav">
-      <a href="#how">איך זה עובד</a>
-      <a href="#privacy">פרטיות</a>
-      <a href="#lockscreen">מסך הנעילה</a>
-      <a href="#flavors">גרסאות</a>
-      <a href="#specs">מפרט</a>
-    </nav>
-    <a class="btn btn-primary" href="#download" style="margin-inline-start:auto">הורדת APK</a>
-  </div>
+</a>
+<nav class="nav"><a href="#how">איך זה עובד</a><a href="#privacy">פרטיות ומהדורות</a><a href="#specs">מפרט</a></nav>
+<a class="btn btn-primary" href="#download" style="margin-inline-start:auto">פרטי הבטא</a>
+</div>
 </header>
-
-<main id="top">
-  <!-- HERO -->
-  <div class="wrap hero">
-    <div>
-      <div class="pill"><span class="dot"></span>100% ON-DEVICE · NO FRAMES LEAVE THE PHONE</div>
-      <h1>שומר המסך.<br><span class="hl">שום תמונה לא יוצאת מהטלפון.</span></h1>
-      <p class="lead">
-        שומר צופה על המסך, מדרג כל פריים בסולם של 1–10 עם מודלי בינה שרצים
-        כולם על המכשיר — ומכסה את המסך ברגע שהתוכן עובר את הגבול שקבעתם.
-        הסריקה כולה על המכשיר — <b>שום פריים לא עוזב את הטלפון</b>. בגרסה החופשית יש הרשאת אינטרנט לצורך פרסומות בלבד.
-      </p>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="#download">הורדת ה-APK</a>
-        <a class="btn btn-ghost" href="#how">איך זה עובד?</a>
-      </div>
-      <div class="stats">
-        <div class="item"><b>0</b><span>הרשאות רשת</span></div>
-        <div class="item"><b>1–10</b><span>סולם דירוג מדויק</span></div>
-        <div class="item"><b>5</b><span>גרסאות לכל בית</span></div>
-        <div class="item"><b>~124MB</b><span>גודל APK</span></div>
-      </div>
-    </div>
-    <div class="phone-stage">
-      <div class="glow"></div>
-      <div style="display:flex;flex-direction:column;align-items:center">
-        <div class="phone">
-          <div class="notch"></div>
-          <div class="screen">
-            <!-- Faithful 1:1 rebuild of the real cover screen:
+<main id="top"><div class="wrap hero"><div><div class="pill"><span class="dot"></span>ON-DEVICE · BETA</div><h1>המסך שלכם.<br/><span class="hl">הסינון אצלכם.</span></h1><h2 class="hero-sub">מנוע מקומי אחד. תוספות לפי הצורך.</h2><p class="lead">שומר מנתחת תמונות מסך על הטלפון, באמצעות מודלי AI הכלולים באפליקציה. אין צורך להעלות את תמונות המסך לענן כדי לקבל דירוג. כשהתוצאה עוברת את סף הסינון של הגרסה, שומר מציגה מסך כיסוי.
+</p><div class="hero-ctas"><a class="btn btn-primary" href="#download">לפרטי הבטא</a><a class="btn btn-ghost" href="#privacy">איך נשמרת הפרטיות?</a></div><div class="stats"><div class="item"><b>מקומי</b><span>ניתוח על המכשיר</span></div><div class="item"><b>רמות</b><span>דירוג לפי סף</span></div><div class="item"><b>בטא</b><span>בבדיקה ושיפור</span></div><div class="item"><b>Android</b><span>שירות נגישות</span></div></div></div><div class="phone-stage">
+<div class="glow"></div>
+<div style="display:flex;flex-direction:column;align-items:center">
+<div class="phone">
+<div class="notch"></div>
+<div class="screen">
+<!-- Faithful 1:1 rebuild of the real cover screen:
                  overlay_cover.xml + religious brand.json + real Hebrew strings
                  + the actual Rav Kook portrait used by the app -->
-            <div class="real-cover">
-              <div class="rc-title">התוכן הזה מכוסה</div>
-              <div class="rc-row">
-                <img class="rc-photo" src="assets/rav-kook.jpg" alt="הרב אברהם יצחק הכהן קוק, צילום 1924">
-                <div>
-                  <div class="rc-name">הרב אברהם יצחק הכהן קוק</div>
-                  <div class="rc-dates">לידה: ט&quot;ז באלול ה'תרכ&quot;ה<br>פטירה: ג' באלול ה'תרצ&quot;ה</div>
-                </div>
-              </div>
-              <div class="rc-quote">ובמהלכו זה הולך הוא וכובש לאט לאט את דרכי היושר, מתקן את המדות, מטיב את המעשים, מלמד את עצמו איך להתכשר יותר ויותר</div>
-              <div class="rc-src">אורות התשובה · פרק ב, תשובה הדרגית</div>
-              <div class="rc-credit">צילום משנת 1924 · ספריית הקונגרס · נחלת הכלל בארה&quot;ב</div>
-              <div class="rc-detail">התמונה קיבלה דירוג: חושפני.</div>
-              <div class="rc-pin">קוד אישי</div>
-              <div class="rc-lift">ביטול נעילה</div>
-              <div class="rc-ad">פרסומת - מקום שמור<br>לא נטענת פרסומת ולא נשלח מידע.</div>
-            </div>
-          </div>
-        </div>
-        <div class="shot-caption">מסך הכיסוי <b>האמיתי</b> של הגרסה הדתית — שחוזר 1:1 מהקוד (overlay_cover.xml + brand.json), עם התמונה, הציטוט והתאריכים שבאפליקציה</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- HOW -->
-  <section id="how">
-    <div class="wrap">
-      <div class="sec-tag">// HOW IT WORKS</div>
-      <h2>רואה. מדרג. מכסה.</h2>
-      <p class="sec-sub">שלושה שלבים שקורים על המכשיר עצמו, שוב ושוב, כל שנייה.</p>
-      <div class="steps">
-        <div class="step">
-          <div class="num">01</div>
-          <h3>צופה על המסך</h3>
-          <p>שירות צילום מסך שקט דוגם את המסך בקצב של פריים בשנייה. מנגנון השוואת תמונות ממוזערות מזהה מתי כלום לא השתנה — וחוסך סוללה.</p>
-        </div>
-        <div class="step">
-          <div class="num">02</div>
-          <h3>מדרג עם AI מקומי</h3>
-          <p>מודלי ONNX רצים על הטלפון עצמו ומדרגים כל פריים בסולם אחיד של 1–10: מ&quot;אין סיגנל&quot; (1) דרך &quot;אנשים&quot; (5) ו&quot;חושפני&quot; (7) ועד &quot;מפורש&quot; (10).</p>
-        </div>
-        <div class="step">
-          <div class="num">03</div>
-          <h3>מכסה מיד</h3>
-          <p>פריים שעבר את הסף? מסך כיסוי מלא קופץ מייד — עם מילת הדירוג בלבד, בלי להציג את התמונה. רק מי שיש לו את ה-PIN מסיר לזמן קצוב.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRIVACY -->
-  <section class="privacy" id="privacy">
-    <div class="wrap privacy-grid">
-      <div>
-        <div class="sec-tag">// PRIVACY BY DESIGN</div>
-        <h2>הפרטיות היא לא הבטחה. הפריימים נשארים על המכשיר.</h2>
-        <p class="sec-sub" style="margin-bottom:26px">
-          כל דירוג הפריים מתבצע על המכשיר — <b>שום תמונה לא נשלחת לשום שרת</b>.
-          בגרסה החופשית מוצהרת הרשאת אינטרנט לצורך פרסומות בלבד; בגרסת Pro
-          ללא האינטרנט — ההרשאה כלל לא קיימת, ואנדרויד חוסם כל גישה לרשת.
-        </p>
-        <div class="checks">
-          <div class="check">
-            <div class="ic">✓</div>
-            <div>
-              <b>המסך נשאר על המסך</b>
-              <p>המודל רץ על המכשיר, הדירוג נשאר על המכשיר. שום פריים, תמונה ממוזערת או גיבוב לא יוצאים החוצה.</p>
-            </div>
-          </div>
-          <div class="check">
-            <div class="ic">✓</div>
-            <div>
-              <b>PIN מוגבל זמן, בלי סיסמאות שמורות</b>
-              <p>הסרת הכיסוי היא לשניות, עם קירור של 10 שניות לפני כיסוי חוזר. ה-PIN מגובב עם PBKDF2 — הוא לא שמור בשום מקום.</p>
-            </div>
-          </div>
-          <div class="check">
-            <div class="ic">✓</div>
-            <div>
-              <b>הכל אופט-אין</b>
-              <p>שמירת פריימים שסומנו לצורכי בקרה? כבויה כברירת מחדל ונשלטת מההגדרות, לתיקייה שאתם בוחרים.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="perm-card">
-        <div class="head">AndroidManifest.xml — declared permissions</div>
-        <div class="perm-line"><span>android.permission.INTERNET</span><span class="val">FREE: ADS · PRO: NOT DECLARED</span></div>
-        <div class="perm-line"><span>android.permission.ACCESS_NETWORK_STATE</span><span class="val">only with INTERNET</span></div>
-        <div class="perm-line"><span>Accessibility (screen capture)</span><span class="yes">ON-DEVICE ONLY</span></div>
-        <div class="perm-line"><span>ONNX inference</span><span class="val">runs locally</span></div>
-        <div class="perm-line"><span>frames / thumbnails / hashes</span><span class="val">never leave</span></div>
-        <div class="perm-line"><span>ads SDK (free edition)</span><span class="val">AdMob banner</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LOCKSCREEN -->
-  <section id="lockscreen">
-    <div class="wrap lock-grid">
-      <div class="rabbi-card">
-        <img class="rabbi-photo" src="assets/rav-kook.jpg" alt="הרב קוק, צילום 1924">
-        <h4>הרב אברהם יצחק הכהן קוק</h4>
-        <div class="dates">ט&quot;ז באלול ה'תרכ&quot;ה — ג' באלול ה'תרצ&quot;ה</div>
-        <blockquote>ובמהלכו זה הולך הוא וכובש לאט לאט את דרכי היושר, מתקן את המדות, מטיב את המעשים, מלמד את עצמו איך להתכשר יותר ויותר</blockquote>
-        <div class="src">אורות התשובה · פרק ב, תשובה הדרגית</div>
-        <div class="credit">1924 photograph · Library of Congress · Public domain (US)</div>
-        <div class="ad-slot">AD SLOT · מקום שמור לפרסומת קטנה מתחת לכפתור הביטול</div>
-      </div>
-      <div>
-        <div class="sec-tag">// THE RELIGIOUS FLAVOR</div>
-        <h2>גם כשנחסם — מרומם.</h2>
-        <p class="sec-sub" style="margin-bottom:26px">
-          בגרסה הדתית, מסך הכיסוי הוא לא קיר שחור: כל פעם מופיע רב אחר
-          מגדולי ישראל — תמונה, תאריכים עבריים וציטוט אמיתי עם מקור. רגע של עצירה
-          שהופך לרגע של חיזוק.
-        </p>
-        <div class="feat-list">
-          <div class="feat">
-            <div class="n">א</div>
-            <div>
-              <b>11 רבנים, כבר בתוך האפליקציה</b>
-              <p>מהרב קוק והחיד&quot;א עד הרב עובדיה והרב קנייבסקי — כל אחד עם תאריך לידה ופטירה לפי הלוח העברי בלבד, ציטוט עם מקור מדויק וקרדיט צילום מלא.</p>
-            </div>
-          </div>
-          <div class="feat">
-            <div class="n">ב</div>
-            <div>
-              <b>עברית קודם כל</b>
-              <p>הגרסה הדתית נולדה בעברית. מעבר שפה מובנה בקובץ תרגום אחד — בלי גרסאות כפולות לתחזק.</p>
-            </div>
-          </div>
-          <div class="feat">
-            <div class="n">ג</div>
-            <div>
-              <b>הסף המחמיר ביותר</b>
-              <p>הגרסה הדתית מתחילה לכסות כבר מדירוג 5 (אנשים) — ההגנה הרחבה ביותר בסדרה.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FLAVORS -->
-  <section class="flavors" id="flavors">
-    <div class="wrap">
-      <div class="sec-tag">// FIVE FLAVORS</div>
-      <h2>אפליקציה אחת. חמש דרגות הגנה.</h2>
-      <p class="sec-sub">כל גרסה היא APK נפרד עם סף קבוע מראש — מתקינים אחת לכל מכשיר, לפי מי שמשתמש בו.</p>
-      <div class="flavor-tabs" id="flavorTabs"></div>
-      <div class="flavor-panel">
-        <div>
-          <h3 id="flName"></h3>
-          <span class="th" id="flThreshold"></span>
-          <p id="flDesc"></p>
-        </div>
-        <div class="meter-wrap">
-          <div class="meter" id="flMeter"></div>
-          <div class="lbl">RATING SCALE 1–10 · COVERS FROM MARKED</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SPECS -->
-  <section id="specs">
-    <div class="wrap">
-      <div class="sec-tag">// UNDER THE HOOD</div>
-      <h2>מפרט טכני</h2>
-      <p class="sec-sub">למתקדמים: מה שרץ שם בפנים.</p>
-      <div class="specs-grid">
-        <div class="spec"><span class="k">מנוע דירוג</span><span class="v">ONNX Runtime · joint / binary / student</span></div>
-        <div class="spec"><span class="k">דגימת מסך</span><span class="v">MediaProjection · 1 fps</span></div>
-        <div class="spec"><span class="k">חיסכון בסוללה</span><span class="v">64×64 thumbnail poll-cache</span></div>
-        <div class="spec"><span class="k">כיסוי</span><span class="v">full-screen Activity · לא overlay</span></div>
-        <div class="spec"><span class="k">PIN</span><span class="v">PBKDF2 hash · לא נשמר בגלוי</span></div>
-        <div class="spec"><span class="k">קירור אחרי הסרה</span><span class="v">10s cooldown</span></div>
-        <div class="spec"><span class="k">שפות</span><span class="v">עברית קודם · קובץ תרגום יחיד</span></div>
-        <div class="spec"><span class="k">גודל APK</span><span class="v">~124 MB · כל ה-ABIs</span></div>
-        <div class="spec"><span class="k">אחורה</span><span class="v">Modesty toolkit · MIT + מסד 4.7M דומיינים</span></div>
-        <div class="spec"><span class="k">רשת</span><span class="v">0 permissions · 0 traffic</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DOWNLOAD -->
-  <section class="download" id="download">
-    <div class="wrap">
-      <div class="sec-tag">// GET SHOMER</div>
-      <h2>מוכנים לסגור את המסך?</h2>
-      <p>בוחרים את הגרסה שמתאימה לבית, מתקינים מחנות Google Play — ומגנים על המסך. שתי דקות, וזהו.</p>
-      <p class="dl-note" style="margin-bottom:18px">זו <b>גרסת הבטא החופשית</b>: ההורדה בחינם, מוצגות פרסומות, ואנחנו אוספים משוב כדי לשפר. הסריקה עצמה נשארת על המכשיר.</p>
-      <div class="dl-cards">
-        <a class="dl-card" href="https://play.google.com/store/apps/details?id=com.oyacorp.modesty.guard.religious.free" data-dl="religious" target="_blank" rel="noopener">
-          <b>שומר · דתי</b>
-          <span>מכסה מדירוג 5 · הורדה מ-Google Play</span>
-        </a>
-        <a class="dl-card" href="https://play.google.com/store/apps/details?id=com.oyacorp.modesty.guard.family.free" data-dl="family" target="_blank" rel="noopener">
-          <b>שומר · משפחה</b>
-          <span>מכסה מדירוג 7 · הורדה מ-Google Play</span>
-        </a>
-        <a class="dl-card" href="https://play.google.com/store/apps/details?id=com.oyacorp.modesty.guard.kids.free" data-dl="kids" target="_blank" rel="noopener">
-          <b>שומר · ילדים</b>
-          <span>מכסה מדירוג 6 · הורדה מ-Google Play</span>
-        </a>
-      </div>
-      <p class="dl-note">גרסאות קפדן ומבוגרים זמינות גם · המנוע מאחורי הקלעים: <a href="https://modesty.cia.org.il" rel="noopener">modesty.cia.org.il</a></p>
-    </div>
-  </section>
-</main>
-
+<div class="real-cover">
+<div class="rc-title">התוכן הזה מכוסה</div>
+<div class="rc-row">
+<img alt="הרב אברהם יצחק הכהן קוק, צילום 1924" class="rc-photo" src="assets/rav-kook.jpg"/>
+<div>
+<div class="rc-name">הרב אברהם יצחק הכהן קוק</div>
+<div class="rc-dates">לידה: ט"ז באלול ה'תרכ"ה<br/>פטירה: ג' באלול ה'תרצ"ה</div>
+</div>
+</div>
+<div class="rc-quote">ובמהלכו זה הולך הוא וכובש לאט לאט את דרכי היושר, מתקן את המדות, מטיב את המעשים, מלמד את עצמו איך להתכשר יותר ויותר</div>
+<div class="rc-src">אורות התשובה · פרק ב, תשובה הדרגית</div>
+<div class="rc-credit">צילום משנת 1924 · ספריית הקונגרס · נחלת הכלל בארה"ב</div>
+<div class="rc-detail">התמונה קיבלה דירוג: חושפני.</div>
+<div class="rc-pin">קוד אישי</div>
+<div class="rc-lift">ביטול נעילה</div>
+<div class="rc-ad">אזור פרסום להמחשה בלבד</div>
+</div>
+</div>
+</div>
+<div class="shot-caption">הדמיה של מסך הכיסוי בגרסה הדתית. אינה צילום מהבנייה הנוכחית. אזור הפרסום מוצג להמחשה בלבד.</div>
+</div>
+</div></div><section id="how"><div class="wrap"><div class="sec-tag">איך זה עובד</div><h2>דוגמת. מדרגת. מכסה.</h2><div class="steps"><article class="step"><div class="num">01</div><h3>דוגמת את המסך</h3><p>לאחר הפעלה ומתן ההרשאות הנדרשות, שומר מנתחת דגימות מסך. הקצב תלוי בהגדרות, במכשיר ובזמן העיבוד. לא כל פריים בווידאו נבדק.</p></article><article class="step"><div class="num">02</div><h3>מדרגת על המכשיר</h3><p>המודלים פועלים מקומית. הדירוג מציין את האות שהמודל זיהה, לא הבטחה לדיוק מוחלט. דירוג 1 פירושו שלא זוהה אות בסריקה שהצליחה, לא שהתוכן בטוח בוודאות.</p></article><article class="step"><div class="num">03</div><h3>מכסה לפי הסף</h3><p>כשמתקבלת תוצאה שעוברת את הסף, האפליקציה מציגה מסך כיסוי. בגרסה הדתית סף הכיסוי המוגדר הוא 5. זמני התגובה והזיהוי עשויים להשתנות.</p></article></div></div></section><section class="privacy" id="privacy"><div class="wrap"><div class="sec-tag">פרטיות לפי מבנה המוצר</div><h2>הסינון מקומי.<br/>החיבור לרשת תלוי במהדורה.</h2><div class="privacy-intro"><p>בסיס הקוד ומנוע הסינון המקומי משותפים. פרסום ובקרת הורים הם רכיבים נפרדים, לא מעבר לניתוח תמונות בענן. לכן חשוב להבדיל בין תמונות המסך שהמנוע מנתח לבין המידע שרכיב רשת עשוי להעביר.</p></div><div class="steps editions"><article class="step"><h3>Free | מהדורת הבטא הנוכחית</h3><p>אותו בסיס סינון מקומי, עם רכיב פרסום של Google AdMob. מהדורה זו כוללת הרשאת אינטרנט. מידע הנוגע לפרסום מפורט במדיניות הפרטיות; הרשאת הרשת אינה נדרשת לחישוב הדירוג המקומי.</p></article><article class="step"><h3>Pro אישי | בהמשך</h3><p>למי שרוצה סינון מקומי בלי פרסומות ובלי בקרת הורים מרחוק. המהדורה מתוכננת ללא הרשאת אינטרנט בקובץ האפליקציה עצמו. לפני הפצתה ייבדק שההרשאה ורכיבי הפרסום והפיקוח אינם כלולים בבנייה.</p></article><article class="step"><h3>בקרת הורים | בהמשך</h3><p>מנוע הסינון נשאר על מכשיר הילד. החיבור המתוכנן מעביר הגדרות ויומן חסימות: מועד, דירוג וסוג הזיהוי. תמונות המסך, התמונות הממוזערות וגיבובי הפריימים אינם חלק ממידע הבקרה המתוכנן. זו מהדורה נפרדת מ-Free, ללא פרסומות, עם אפליקציה נפרדת להורה.</p></article></div><div class="pin-note"><h3>קוד אישי ושמירה מקומית</h3><p>כאשר מוגדר קוד אישי, הוא נבדק לצורך הסרת הכיסוי. נשמרים מלח וגיבוב PBKDF2, לא הקוד הגלוי. שמירת תמונות שסומנו לצורכי בדיקה כבויה כברירת מחדל וניתנת להפעלה בהגדרות.</p></div></div></section><section id="specs"><div class="wrap"><div class="sec-tag">מה יש בבנייה</div><h2>מפרט קצר</h2><div class="specs-grid"><div class="spec"><span class="k">ניתוח</span><span class="v">ONNX Runtime, עם המודלים הכלולים בבנייה.</span></div><div class="spec"><span class="k">צילום מסך</span><span class="v">שירות נגישות באנדרואיד 11 ומעלה, בכפוף להפעלה והרשאות מתאימות.</span></div><div class="spec"><span class="k">כיסוי</span><span class="v">מסך Activity מלא; אינו חסימה של תעבורת הרשת.</span></div><div class="spec"><span class="k">פרסום</span><span class="v">רכיב AdMob במהדורת Free. הצגת מודעות בפועל תלויה בזמינות ובאישור Google.</span></div><div class="spec"><span class="k">גודל וגרסה</span><span class="v">יוצגו ליד קובץ ההתקנה או עמוד החנות לאחר אימות הבנייה המופצת.</span></div><div class="spec"><span class="k">מהדורות</span><span class="v">Free מוגדרת בקוד הנוכחי; Pro ובקרת הורים מתוכננות להמשך.</span></div></div></div></section><section class="download" id="download"><div class="wrap"><div class="sec-tag">לקראת התקנה</div><h2>בטא, עם שקיפות לגבי המגבלות.</h2><p>אנחנו בודקים ומשפרים את שומר. ייתכנו פספוסים, כיסוי שגוי ועיכובים, והאפליקציה אינה מבטיחה פעולה בכל מסך או בכל אפליקציה, או הגנה מלאה מפני עקיפה. יש לבדוק את התאמתה למכשיר ולשימוש לפני הסתמכות עליה.</p><p>קישור התקנה ופרטי הבנייה יופיעו כאן לאחר אימות זמינותם לקהל הבטא.</p></div></section></main>
 <footer>
-  <div class="wrap">
-    <div class="fbrand"><img src="assets/shomer-logo.svg" alt="">שומר</div>
-    <div>מופעל על ידי מנוע <a href="https://modesty.cia.org.il" rel="noopener">Modesty</a> · הקוד פתוח (MIT) · © 2026</div>
-  </div>
+<div class="wrap">
+<div class="fbrand"><img alt="" src="assets/screen-guard-logo.svg"/>שומר</div>
+<div>מופעל על ידי מנוע <a href="https://modesty.cia.org.il/">Modesty</a> · © 2026</div>
+</div>
 </footer>
 
-<script>
-// flavors
-const flavors = [
-  {id:'kids',      name:'שומר · ילדים',   from:6,  label:'COVERS FROM 6 · ROMANCE',   desc:'ההגנה המחמירה ביותר: מכסה כבר מתוכן רומנטי. לטלפון הראשון של הילדים — שקט נפשי מלא להורים.'},
-  {id:'religious', name:'שומר · דתי',     from:5,  label:'COVERS FROM 5 · PEOPLE',    desc:'הגרסה של בית ישראל: מתחילה לכסות כבר מדירוג &quot;אנשים&quot;, עם מסך נעילה של גדולי ישראל, תאריכים עבריים וציטוטים.'},
-  {id:'family',    name:'שומר · משפחה',   from:7,  label:'COVERS FROM 7 · REVEALING', desc:'הגדרת היום-יום לכל הבית: מכסה תוכן חושפני ומעלה. הבחירה המאוזנת לרוב המכשירים.'},
-  {id:'strict',    name:'שומר · קפדן',    from:8,  label:'COVERS FROM 8 · SUGGESTIVE',desc:'רק הרצועות החזקות. למי שרוצה הגנה ממוקדת בלי כיסויים מיותרים.'},
-  {id:'adult',     name:'שומר · מבוגרים', from:10, label:'COVERS FROM 10 · EXPLICIT', desc:'מכסה תוכן מפורש בלבד. שכבת ביטחון אחרונה, מינימלית.'}
-];
-const tabsEl = document.getElementById('flavorTabs');
-const meterEl = document.getElementById('flMeter');
-const nameEl = document.getElementById('flName');
-const thEl = document.getElementById('flThreshold');
-const descEl = document.getElementById('flDesc');
-
-function renderMeter(from){
-  meterEl.innerHTML = '';
-  for(let i=1;i<=10;i++){
-    const s = document.createElement('div');
-    s.className = 'seg' + (i>=from ? ' on' : '');
-    meterEl.appendChild(s);
-  }
-}
-function select(id){
-  const f = flavors.find(x=>x.id===id);
-  nameEl.textContent = f.name;
-  thEl.textContent = f.label;
-  descEl.innerHTML = f.desc;
-  renderMeter(f.from);
-  tabsEl.querySelectorAll('.ftab').forEach(b=>b.classList.toggle('active', b.dataset.id===id));
-}
-flavors.forEach(f=>{
-  const b = document.createElement('button');
-  b.className='ftab'; b.dataset.id=f.id; b.textContent=f.name.replace('שומר · ','');
-  b.addEventListener('click',()=>select(f.id));
-  tabsEl.appendChild(b);
-});
-select('religious');
-
-// download cards link directly to Google Play (see .dl-card hrefs)
-</script>
 </body>
 </html>
