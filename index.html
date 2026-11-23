@@ -184,6 +184,23 @@ section{padding:64px 0}
 .sec-tag{font-family:var(--mono);font-size:.74rem;color:var(--cyan);letter-spacing:2px;margin-bottom:10px}
 h2{font-size:clamp(1.6rem,3vw,2.3rem);font-weight:800;margin-bottom:14px}
 .sec-sub{color:var(--muted);max-width:640px;margin-bottom:38px}
+/* Edition comparison table (integrated from nfsw_scanner landing/shomer/pricing-table.html, 23 Nov 2026) */
+#pricing .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--panel)}
+#pricing table{border-collapse:collapse;width:100%;min-width:760px;text-align:right}
+#pricing th,#pricing td{padding:14px 18px;border-bottom:1px solid rgba(82,120,142,.5);vertical-align:top}
+#pricing thead th{background:var(--panel2);font-size:.95rem;font-weight:700}
+#pricing thead th:first-child{color:var(--muted);font-weight:500;width:32%}
+#pricing tbody tr:last-child td{border-bottom:none}
+#pricing tbody td:first-child{color:var(--muted);font-size:.92rem}
+#pricing td.v{font-family:var(--mono);font-size:.8rem;color:var(--text)}
+#pricing .yes{color:var(--good);font-weight:700}
+#pricing .no{color:#ff8a8a;font-weight:600}
+#pricing .soon{color:var(--cyan);font-family:var(--mono);font-size:.76rem}
+#pricing .all-row td{background:rgba(68,215,235,.05);color:var(--cyan);font-size:.86rem}
+#pricing .note{font-family:var(--mono);font-size:.74rem;color:var(--muted);margin-top:18px;line-height:1.8}
+#pricing .note b{color:var(--cyan)}
+@media(max-width:700px){#pricing th,#pricing td{padding:10px 12px}}
+
 
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media(max-width:820px){.steps{grid-template-columns:1fr}}
@@ -348,7 +365,7 @@ footer a:hover{color:var(--accent)}
       שומר
       <small>BY MODESTY</small>
 </a>
-<nav class="nav"><a href="#how">איך זה עובד</a><a href="#privacy">פרטיות ומהדורות</a><a href="#specs">מפרט</a></nav>
+<nav class="nav"><a href="#how">איך זה עובד</a><a href="#privacy">פרטיות ומהדורות</a><a href="#pricing">השוואת מהדורות</a><a href="#specs">מפרט</a></nav>
 <a class="btn btn-primary" href="#download" style="margin-inline-start:auto">פרטי הבטא</a>
 </div>
 </header>
@@ -383,7 +400,68 @@ footer a:hover{color:var(--accent)}
 </div>
 <div class="shot-caption">הדמיה של מסך הכיסוי בגרסה הדתית. אינה צילום מהבנייה הנוכחית. אזור הפרסום מוצג להמחשה בלבד.</div>
 </div>
-</div></div><section id="how"><div class="wrap"><div class="sec-tag">איך זה עובד</div><h2>דוגמת. מדרגת. מכסה.</h2><div class="steps"><article class="step"><div class="num">01</div><h3>דוגמת את המסך</h3><p>לאחר הפעלה ומתן ההרשאות הנדרשות, שומר מנתחת דגימות מסך. הקצב תלוי בהגדרות, במכשיר ובזמן העיבוד. לא כל פריים בווידאו נבדק.</p></article><article class="step"><div class="num">02</div><h3>מדרגת על המכשיר</h3><p>המודלים פועלים מקומית. הדירוג מציין את האות שהמודל זיהה, לא הבטחה לדיוק מוחלט. דירוג 1 פירושו שלא זוהה אות בסריקה שהצליחה, לא שהתוכן בטוח בוודאות.</p></article><article class="step"><div class="num">03</div><h3>מכסה לפי הסף</h3><p>כשמתקבלת תוצאה שעוברת את הסף, האפליקציה מציגה מסך כיסוי. בגרסה הדתית סף הכיסוי המוגדר הוא 5. זמני התגובה והזיהוי עשויים להשתנות.</p></article></div></div></section><section class="privacy" id="privacy"><div class="wrap"><div class="sec-tag">פרטיות לפי מבנה המוצר</div><h2>הסינון מקומי.<br/>החיבור לרשת תלוי במהדורה.</h2><div class="privacy-intro"><p>בסיס הקוד ומנוע הסינון המקומי משותפים. פרסום ובקרת הורים הם רכיבים נפרדים, לא מעבר לניתוח תמונות בענן. לכן חשוב להבדיל בין תמונות המסך שהמנוע מנתח לבין המידע שרכיב רשת עשוי להעביר.</p></div><div class="steps editions"><article class="step"><h3>Free | מהדורת הבטא הנוכחית</h3><p>אותו בסיס סינון מקומי, עם רכיב פרסום של Google AdMob. מהדורה זו כוללת הרשאת אינטרנט. מידע הנוגע לפרסום מפורט במדיניות הפרטיות; הרשאת הרשת אינה נדרשת לחישוב הדירוג המקומי.</p></article><article class="step"><h3>Pro אישי | בהמשך</h3><p>למי שרוצה סינון מקומי בלי פרסומות ובלי בקרת הורים מרחוק. המהדורה מתוכננת ללא הרשאת אינטרנט בקובץ האפליקציה עצמו. לפני הפצתה ייבדק שההרשאה ורכיבי הפרסום והפיקוח אינם כלולים בבנייה.</p></article><article class="step"><h3>בקרת הורים | בהמשך</h3><p>מנוע הסינון נשאר על מכשיר הילד. החיבור המתוכנן מעביר הגדרות ויומן חסימות: מועד, דירוג וסוג הזיהוי. תמונות המסך, התמונות הממוזערות וגיבובי הפריימים אינם חלק ממידע הבקרה המתוכנן. זו מהדורה נפרדת מ-Free, ללא פרסומות, עם אפליקציה נפרדת להורה.</p></article></div><div class="pin-note"><h3>קוד אישי ושמירה מקומית</h3><p>כאשר מוגדר קוד אישי, הוא נבדק לצורך הסרת הכיסוי. נשמרים מלח וגיבוב PBKDF2, לא הקוד הגלוי. שמירת תמונות שסומנו לצורכי בדיקה כבויה כברירת מחדל וניתנת להפעלה בהגדרות.</p></div></div></section><section id="specs"><div class="wrap"><div class="sec-tag">מה יש בבנייה</div><h2>מפרט קצר</h2><div class="specs-grid"><div class="spec"><span class="k">ניתוח</span><span class="v">ONNX Runtime, עם המודלים הכלולים בבנייה.</span></div><div class="spec"><span class="k">צילום מסך</span><span class="v">שירות נגישות באנדרואיד 11 ומעלה, בכפוף להפעלה והרשאות מתאימות.</span></div><div class="spec"><span class="k">כיסוי</span><span class="v">מסך Activity מלא; אינו חסימה של תעבורת הרשת.</span></div><div class="spec"><span class="k">פרסום</span><span class="v">רכיב AdMob במהדורת Free. הצגת מודעות בפועל תלויה בזמינות ובאישור Google.</span></div><div class="spec"><span class="k">גודל וגרסה</span><span class="v">יוצגו ליד קובץ ההתקנה או עמוד החנות לאחר אימות הבנייה המופצת.</span></div><div class="spec"><span class="k">מהדורות</span><span class="v">Free מוגדרת בקוד הנוכחי; Pro ובקרת הורים מתוכננות להמשך.</span></div></div></div></section><section class="download" id="download"><div class="wrap"><div class="sec-tag">לקראת התקנה</div><h2>בטא, עם שקיפות לגבי המגבלות.</h2><p>אנחנו בודקים ומשפרים את שומר. ייתכנו פספוסים, כיסוי שגוי ועיכובים, והאפליקציה אינה מבטיחה פעולה בכל מסך או בכל אפליקציה, או הגנה מלאה מפני עקיפה. יש לבדוק את התאמתה למכשיר ולשימוש לפני הסתמכות עליה.</p><p>קישור התקנה ופרטי הבנייה יופיעו כאן לאחר אימות זמינותם לקהל הבטא.</p></div></section></main>
+</div></div><section id="how"><div class="wrap"><div class="sec-tag">איך זה עובד</div><h2>דוגמת. מדרגת. מכסה.</h2><div class="steps"><article class="step"><div class="num">01</div><h3>דוגמת את המסך</h3><p>לאחר הפעלה ומתן ההרשאות הנדרשות, שומר מנתחת דגימות מסך. הקצב תלוי בהגדרות, במכשיר ובזמן העיבוד. לא כל פריים בווידאו נבדק.</p></article><article class="step"><div class="num">02</div><h3>מדרגת על המכשיר</h3><p>המודלים פועלים מקומית. הדירוג מציין את האות שהמודל זיהה, לא הבטחה לדיוק מוחלט. דירוג 1 פירושו שלא זוהה אות בסריקה שהצליחה, לא שהתוכן בטוח בוודאות.</p></article><article class="step"><div class="num">03</div><h3>מכסה לפי הסף</h3><p>כשמתקבלת תוצאה שעוברת את הסף, האפליקציה מציגה מסך כיסוי. בגרסה הדתית סף הכיסוי המוגדר הוא 5. זמני התגובה והזיהוי עשויים להשתנות.</p></article></div></div></section><section class="privacy" id="privacy"><div class="wrap"><div class="sec-tag">פרטיות לפי מבנה המוצר</div><h2>הסינון מקומי.<br/>החיבור לרשת תלוי במהדורה.</h2><div class="privacy-intro"><p>בסיס הקוד ומנוע הסינון המקומי משותפים. פרסום ובקרת הורים הם רכיבים נפרדים, לא מעבר לניתוח תמונות בענן. לכן חשוב להבדיל בין תמונות המסך שהמנוע מנתח לבין המידע שרכיב רשת עשוי להעביר.</p></div><div class="steps editions"><article class="step"><h3>Free | מהדורת הבטא הנוכחית</h3><p>אותו בסיס סינון מקומי, עם רכיב פרסום של Google AdMob. מהדורה זו כוללת הרשאת אינטרנט. מידע הנוגע לפרסום מפורט במדיניות הפרטיות; הרשאת הרשת אינה נדרשת לחישוב הדירוג המקומי.</p></article><article class="step"><h3>Pro אישי | בהמשך</h3><p>למי שרוצה סינון מקומי בלי פרסומות ובלי בקרת הורים מרחוק. המהדורה מתוכננת ללא הרשאת אינטרנט בקובץ האפליקציה עצמו. לפני הפצתה ייבדק שההרשאה ורכיבי הפרסום והפיקוח אינם כלולים בבנייה.</p></article><article class="step"><h3>בקרת הורים | בהמשך</h3><p>מנוע הסינון נשאר על מכשיר הילד. החיבור המתוכנן מעביר הגדרות ויומן חסימות: מועד, דירוג וסוג הזיהוי. תמונות המסך, התמונות הממוזערות וגיבובי הפריימים אינם חלק ממידע הבקרה המתוכנן. זו מהדורה נפרדת מ-Free, ללא פרסומות, עם אפליקציה נפרדת להורה.</p></article></div><div class="pin-note"><h3>קוד אישי ושמירה מקומית</h3><p>כאשר מוגדר קוד אישי, הוא נבדק לצורך הסרת הכיסוי. נשמרים מלח וגיבוב PBKDF2, לא הקוד הגלוי. שמירת תמונות שסומנו לצורכי בדיקה כבויה כברירת מחדל וניתנת להפעלה בהגדרות.</p></div></div></section><section id="pricing">
+<div class="wrap">
+  <div class="sec-tag">השוואת מהדורות</div>
+  <h2>מנוע אחד. שלוש דרכים להשתמש בו.</h2>
+  <p class="sec-sub">
+    הדירוג והכיסוי מתבצעים על המכשיר בכל המהדורות. ההבדל הוא רק ברכיבי הרשת:
+    פרסום, בקרת הורים ויומן חסימות. סף הכיסוי נקבע לפי גרסת החנות
+    (דתי 5 · ילדים 6 · משפחה 7 · קפדן 8 · מבוגרים 10).
+  </p>
+
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>יכולת</th>
+        <th>Free · בטא נוכחית</th>
+        <th>Pro אישי · בהמשך</th>
+        <th>בקרת הורים · בהמשך</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>סף כיסוי</td>
+        <td class="v">5 / 6 / 7 / 8 / 10</td><td class="v">5 / 6 / 7 / 8 / 10</td><td class="v">5 / 6 / 7 / 8 / 10</td></tr>
+      <tr><td>ניתוח תמונות מקומי (ONNX)</td>
+        <td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+      <tr><td>סריקת טקסט על המסך</td>
+        <td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+      <tr><td>מסך כיסוי מלא + קוד אישי</td>
+        <td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+      <tr><td>פרסומות AdMob</td>
+        <td class="yes">✓</td><td class="no">—</td><td class="no">—</td></tr>
+      <tr><td>הרשאת INTERNET</td>
+        <td class="v">מוצהרת — לפרסום בלבד</td><td class="v">לא מוצהרת</td><td class="v">מוצהרת — לשער ההורה</td></tr>
+      <tr><td>הרשאת AD_ID</td>
+        <td class="yes">✓</td><td class="no">—</td><td class="no">—</td></tr>
+      <tr><td>יומן חסימות מקומי</td>
+        <td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+      <tr><td>חסימת אפליקציות ידועות (מצב מחמיר)</td>
+        <td class="no">—</td><td class="soon">רשימה זמנית</td><td class="soon">רשימה זמנית</td></tr>
+      <tr><td>בקרת הורים דרך שער</td>
+        <td class="no">—</td><td class="no">—</td><td class="soon">מתוכנן</td></tr>
+      <tr><td>תמונות / תמונות ממוזערות / גיבובים נשלחים</td>
+        <td class="yes">לא</td><td class="yes">לא</td><td class="yes">לא</td></tr>
+      <tr><td>שפות</td>
+        <td class="v">עברית + אנגלית</td><td class="v">עברית + אנגלית</td><td class="v">עברית + אנגלית</td></tr>
+      <tr><td>מחיר</td>
+        <td class="v">חינם, עם פרסומות</td><td class="v">טרם נקבע</td><td class="v">טרם נקבע</td></tr>
+      <tr class="all-row"><td colspan="4">
+        בכל המהדורות: ניתוח על המכשיר · שום פריים לא עוזב את המכשיר ·
+        PBKDF2 לקוד האישי · קירור 10 שניות · שמירת תמונות לבדיקה כבויה כברירת מחדל
+      </td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p class="note">
+    <b>שקיפות:</b> Pro אישי ובקרת הורים מתוכננות ואינן כלולות בבנייה הנוכחית.
+    רשימת האפליקציות הידועות זמנית וטרם אומתה. המחירים טרם נקבעו.
+    סף הכיסוי תלוי בגרסה ולא ניתן לשינוי בתוך האפליקציה.
+  </p>
+</div>
+</section><section id="specs"><div class="wrap"><div class="sec-tag">מה יש בבנייה</div><h2>מפרט קצר</h2><div class="specs-grid"><div class="spec"><span class="k">ניתוח</span><span class="v">ONNX Runtime, עם המודלים הכלולים בבנייה.</span></div><div class="spec"><span class="k">צילום מסך</span><span class="v">שירות נגישות באנדרואיד 11 ומעלה, בכפוף להפעלה והרשאות מתאימות.</span></div><div class="spec"><span class="k">כיסוי</span><span class="v">מסך Activity מלא; אינו חסימה של תעבורת הרשת.</span></div><div class="spec"><span class="k">פרסום</span><span class="v">רכיב AdMob במהדורת Free. הצגת מודעות בפועל תלויה בזמינות ובאישור Google.</span></div><div class="spec"><span class="k">גודל וגרסה</span><span class="v">יוצגו ליד קובץ ההתקנה או עמוד החנות לאחר אימות הבנייה המופצת.</span></div><div class="spec"><span class="k">מהדורות</span><span class="v">Free מוגדרת בקוד הנוכחי; Pro ובקרת הורים מתוכננות להמשך.</span></div></div></div></section><section class="download" id="download"><div class="wrap"><div class="sec-tag">לקראת התקנה</div><h2>בטא, עם שקיפות לגבי המגבלות.</h2><p>אנחנו בודקים ומשפרים את שומר. ייתכנו פספוסים, כיסוי שגוי ועיכובים, והאפליקציה אינה מבטיחה פעולה בכל מסך או בכל אפליקציה, או הגנה מלאה מפני עקיפה. יש לבדוק את התאמתה למכשיר ולשימוש לפני הסתמכות עליה.</p><p>קישור התקנה ופרטי הבנייה יופיעו כאן לאחר אימות זמינותם לקהל הבטא.</p></div></section></main>
 <footer>
 <div class="wrap">
 <div class="fbrand"><img alt="" src="assets/screen-guard-logo.svg"/>שומר</div>
